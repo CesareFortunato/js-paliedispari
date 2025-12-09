@@ -24,15 +24,15 @@ console.log("numero del pc:", pcChoice);
 console.log("somma:", sum);
 
 
-oddEven();
+even = isEven(sum);
 
-if(even === true && userChoice === "pari"){
+if (even === true && userChoice === "pari") {
   console.log("hai vinto");
 }
-else if(even === false && userChoice === "dispari"){
+else if (even === false && userChoice === "dispari") {
   console.log("hai vinto");
 }
-else{
+else {
   console.log("hai perso");
 }
 
@@ -41,12 +41,12 @@ else{
 
 
 function randomNumber() {
-  return Math.floor(Math.random() * 5) + 1;  
+  return Math.floor(Math.random() * 5) + 1;
 }
 
-function oddEven() {
-  if(sum % 2 === 0){
-    even = true;
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
   }
 }
 
